@@ -2,7 +2,11 @@
 // This connects your React frontend to your Python backend.
 
 // Your new, non-standard port!
-const API_BASE_URL = "https://text-guard.onrender.com"; 
+// frontend/src/lib/api.js
+// Base URL for the backend – read from Vite env
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL || "http://localhost:8000";
+
 
 /**
  * Calls the backend /moderate endpoint
